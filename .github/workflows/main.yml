@@ -37,11 +37,15 @@ jobs:
     # instalando as dependecias do node
     - run: npm install
     
+    # limpando os relatórios
+    - run: npm run report:clean
+
     # Executar os testes usando o cucumber
-    - run: npm run cy:run:cucumber
+    - run: npm run cy:run
     
     # Gerar relatório em html
-    - run: npm run reporter:cucumber
+    - run: npm run report:merge
+    - run: npm run report:mocha
     
     # publicar relatorio html
     - name: Deploy to Github pages
@@ -49,5 +53,5 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: cypress/reports/index.html
+        FOLDER: mochawesome-report/full_report.html
     
