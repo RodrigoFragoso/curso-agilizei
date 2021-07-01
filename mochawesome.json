@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-01T17:17:26.316Z",
-    "end": "2021-07-01T17:17:45.079Z",
-    "duration": 18763,
+    "start": "2021-07-01T17:19:41.561Z",
+    "end": "2021-07-01T17:19:55.016Z",
+    "duration": 13455,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "053a1230-b5e6-4458-af6a-a6bcb3045be6",
+      "uuid": "b0fe6f4f-46a0-4fde-927c-9f484dface72",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b5359885-05fc-4f1b-938e-3da6e38a74c9",
+          "uuid": "a71931a7-82fe-4aae-a0d0-a93f42a5ad1f",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar usuário no site",
               "fullTitle": "Cadastro Cadastrar usuário no site",
               "timedOut": null,
-              "duration": 18605,
+              "duration": 13397,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.server();\ncy.route('POST', '**/api/1/databases/userdetails/collections/newtable?**').as('postNewTable');\ncy.route('POST', '**/api/1/databases/userdetails/collections/usertable?**').as('postUserTable');\ncy.route('GET', '**/api/1/databases/userdetails/collections/newtable?**').as('getNewTable');\ncy.visit('/Register.html');\ncy.get('input[ng-model^=\"First\"]').should('be.visible').type(chance.first());\ncy.get('input[ng-model^=\"Last\"]').should('be.visible').type(chance.last());\ncy.get('input[ng-model^=\"Email\"]').should('be.visible').type(chance.email());\ncy.get('input[ng-model^=\"Phone\"]').should('be.visible').type(chance.phone({\n  formatted: false\n}));\ncy.get('input[value=FeMale]').check();\ncy.get('input[type=checkbox]').check('Cricket');\ncy.get('input[type=checkbox]').check('Movies');\ncy.get('select#Skills').select('Javascript');\ncy.get('select#countries').select('Brazil');\ncy.get('select#country').select('India', {\n  force: true\n});\ncy.get('select#yearbox').select('1991');\ncy.get('select[ng-model^=month]').select('August');\ncy.get('select#daybox').select('30');\ncy.get('input#firstpassword').type('Teste@2021');\ncy.get('input#secondpassword').type('Teste@2021');\ncy.get('input#imagesrc').attachFile('imagem-foto.png');\ncy.get('button#submitbtn').click(); // cy.wait('@postNewTable').then((responseNewTable) =>{\n//     expect(responseNewTable.status).to.eq(200)\n// })\n// cy.wait('@getNewTable').then((responseGetNewTable) =>{\n//     expect(responseGetNewTable.status).to.eq(200)\n// })\n// cy.url().should('contain', '**/WebTable')",
               "err": {},
-              "uuid": "8b0f7bf4-fd5e-4a1b-a858-eadafb05f694",
-              "parentUUID": "b5359885-05fc-4f1b-938e-3da6e38a74c9",
+              "uuid": "0b30fb85-17ab-41bc-842e-44ee24992608",
+              "parentUUID": "a71931a7-82fe-4aae-a0d0-a93f42a5ad1f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8b0f7bf4-fd5e-4a1b-a858-eadafb05f694"
+            "0b30fb85-17ab-41bc-842e-44ee24992608"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18605,
+          "duration": 13397,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
