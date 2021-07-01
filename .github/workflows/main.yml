@@ -51,6 +51,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
         token: ${{ secrets.github_token }}
-        granch: gh-pages
+        branch: gh-pages
         folder: mochawesome-report/full_report.html
     
