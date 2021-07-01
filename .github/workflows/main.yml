@@ -37,10 +37,10 @@ jobs:
     # instalando as dependecias do node
     - run: npm install
     
-    # limpando os relatórios
+    # limpando os relatórios antigos
     - run: npm run report:clean
 
-    # Executar os testes usando o cucumber
+    # Executar os testes
     - run: npm run cy:run
     
     # Gerar relatório em html
