@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-01T16:59:55.473Z",
-    "end": "2021-07-01T17:00:04.597Z",
-    "duration": 9124,
+    "start": "2021-07-01T17:15:50.785Z",
+    "end": "2021-07-01T17:16:00.935Z",
+    "duration": 10150,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "db7638f4-5201-4028-8d5c-977272e60d76",
+      "uuid": "629840f5-d7e8-4884-9c1f-670beddd92fd",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "adc2d357-8c14-443b-86da-d1174e0e19f6",
+          "uuid": "fbac0c73-90df-468c-92d8-aaa4e628ccda",
           "title": "Listar",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "b3224fa0-e563-4079-a6a7-0e55635d164e",
+              "uuid": "388e4f64-efd8-4bc3-be31-97a85f995ad7",
               "title": "Listagem",
               "fullFile": "",
               "file": "",
@@ -47,7 +47,7 @@
                   "title": "Listagem com apenas um registro",
                   "fullTitle": "Listar Listagem Listagem com apenas um registro",
                   "timedOut": null,
-                  "duration": 8954,
+                  "duration": 10092,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -56,20 +56,20 @@
                   "context": null,
                   "code": "cy.server();\ncy.route({\n  method: 'GET',\n  url: '**/api/1/databases/userdetails/collections/newtable?**',\n  status: 200,\n  response: 'fx:webtable-get-unique'\n});\ncy.visit('/WebTable.html');",
                   "err": {},
-                  "uuid": "7fa44d8d-6e14-4a4f-a50f-90b9f57da271",
-                  "parentUUID": "b3224fa0-e563-4079-a6a7-0e55635d164e",
+                  "uuid": "336cfb2f-39b0-4a7c-af02-77178e88a901",
+                  "parentUUID": "388e4f64-efd8-4bc3-be31-97a85f995ad7",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "7fa44d8d-6e14-4a4f-a50f-90b9f57da271"
+                "336cfb2f-39b0-4a7c-af02-77178e88a901"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 8954,
+              "duration": 10092,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
